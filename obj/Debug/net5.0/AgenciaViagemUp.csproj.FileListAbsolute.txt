@@ -159,3 +159,5 @@ C:\Users\Remakkker\.vscode\aulas-exercicios-projetos\AgenciaViagemUp\obj\Debug\n
 C:\Users\Remakkker\.vscode\aulas-exercicios-projetos\AgenciaViagemUp\obj\Debug\net5.0\Razor\Views\Passagem\Details.cshtml.g.cs
 C:\Users\Remakkker\.vscode\aulas-exercicios-projetos\AgenciaViagemUp\obj\Debug\net5.0\Razor\Views\Passagem\Edit.cshtml.g.cs
 C:\Users\Remakkker\.vscode\aulas-exercicios-projetos\AgenciaViagemUp\obj\Debug\net5.0\Razor\Views\Passagem\Index.cshtml.g.cs
+C:\Users\Remakkker\.vscode\aulas-exercicios-projetos\AgenciaViagemUp\obj\Debug\net5.0\Razor\Views\Promocoes\Index.cshtml.g.cs
+C:\Users\Remakkker\.vscode\aulas-exercicios-projetos\AgenciaViagemUp\obj\Debug\net5.0\Razor\Views\Contato\Index.cshtml.g.cs
