@@ -1,0 +1,50 @@
+@model AgenciaViagemUp.Models.PassagemModel
+
+@{
+    ViewData["Title"] = "Get Passagem";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhes</title>
+</head>
+<body>
+
+<div>
+    <h4>Detalhes da Passagem</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.ClienteModel) *@
+            Nome do Cliente
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ClienteModel.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.DestinoModel) *@
+            Destino da Viagem
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DestinoModel.Cidade)-
+            @Html.DisplayFor(model => model.DestinoModel.Estado),
+            @Html.DisplayFor(model => model.DestinoModel.Pais)
+        </dd>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.Preco) *@
+            Preço
+        </dt>
+        <dd class = "col-sm-10">
+            R$ @Html.DisplayFor(model => model.Preco)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>
+</body>
+</html>

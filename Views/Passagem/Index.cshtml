@@ -1,0 +1,58 @@
+@model IEnumerable<AgenciaViagemUp.Models.PassagemModel>
+
+@{
+    ViewData["Title"] = "Index Passagem";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Passagens</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Nova Passagem</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @* @Html.DisplayNameFor(model => model.ClienteModel) *@
+                Nome do Cliente
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.DestinoModel) *@
+                Destino da Viagem
+            </th>
+            <th>
+                @* @Html.DisplayNameFor(model => model.Preco) *@
+                Preço
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClienteModel.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinoModel.Cidade)
+            </td>
+            <td>
+                R$ @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Ver Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

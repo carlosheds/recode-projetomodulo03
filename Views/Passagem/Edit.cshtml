@@ -1,0 +1,50 @@
+@model AgenciaViagemUp.Models.PassagemModel
+
+@{
+    ViewData["Title"] = "Edit Passagem";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar</title>
+</head>
+<body>
+
+<h4>Editar Passagem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ClienteModelId" class="control-label">Nome do Cliente</label>
+                <select asp-for="ClienteModelId" class="form-control" asp-items="ViewBag.ClienteModelId"></select>
+                <span asp-validation-for="ClienteModelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinoModelId" class="control-label">Destino da Viagem</label>
+                <select asp-for="DestinoModelId" class="form-control" asp-items="ViewBag.DestinoModelId"></select>
+                <span asp-validation-for="DestinoModelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preco" class="control-label">Preço</label>
+                <input asp-for="Preco" class="form-control" />
+                <span asp-validation-for="Preco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+</body>
+</html>

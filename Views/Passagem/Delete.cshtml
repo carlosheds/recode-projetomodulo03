@@ -1,0 +1,51 @@
+@model AgenciaViagemUp.Models.PassagemModel
+
+@{
+    ViewData["Title"] = "Delete Passagem";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Deletar</title>
+</head>
+<body>
+
+<h3>Tem certeza que quer deletar esta passagem?</h3>
+<div>
+    <h4>Deletar Passagem</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.ClienteModel) *@
+            Nome do Cliente
+        </dt>
+        <dd class = "col-sm-10">
+            @* @Html.DisplayFor(model => model.ClienteModel.Nome) *@
+            Destino da Viagem
+        </dd class>
+        <dt class = "col-sm-2">
+            @* @Html.DisplayNameFor(model => model.DestinoModel) *@
+            Preço
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DestinoModel.Cidade)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Preco)
+        </dt>
+        <dd class = "col-sm-10">
+            R$ @Html.DisplayFor(model => model.Preco)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+        <a asp-action="Index">Voltar</a>
+    </form>
+</div>
+</body>
+</html>
