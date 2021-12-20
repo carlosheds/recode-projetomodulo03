@@ -2,7 +2,23 @@
     ViewData["Title"] = "Contato";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Contato</h1>
-    <p>Teste</p>
+<div class="container row text-center align-itens-center justify-content-center">
+    <h1 class="display-4 col-12">Contato</h1>
+    <p class="col-12 mb-5">Deixe-nos uma mensagem</p>
+    <form class="mt-5">
+        <div class="mb-3">
+            <label for="inputName" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelmp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="InputMessage" class="form-label">Mensagem</label>
+            <textarea type="textarea" class="form-control" id="InputMessage"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
 </div>

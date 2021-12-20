@@ -15644,11 +15644,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakkker\\.vscode\\aulas-exercicios-projetos\\AgenciaViagemUp\\Views\\Promocoes copy\\Index.cshtml",
-      "TargetPath": "Views\\Promocoes copy\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Remakkker\\.vscode\\aulas-exercicios-projetos\\AgenciaViagemUp\\Views\\Cliente\\Index.cshtml",
       "TargetPath": "Views\\Cliente\\Index.cshtml",
       "FileKind": "mvc"
@@ -15686,6 +15681,11 @@
     {
       "FilePath": "c:\\Users\\Remakkker\\.vscode\\aulas-exercicios-projetos\\AgenciaViagemUp\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakkker\\.vscode\\aulas-exercicios-projetos\\AgenciaViagemUp\\Views\\Contato\\Index.cshtml",
+      "TargetPath": "Views\\Contato\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
