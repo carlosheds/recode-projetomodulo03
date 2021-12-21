@@ -118,7 +118,7 @@ main section.home-herosection {
 }
 
 .container .text-box a {
-    background-color: blue;
+    background-color: #1b6ec2;
     color: white;
     padding: 15px 10px;
     font-size: 1.2rem;
@@ -243,11 +243,18 @@ form button.btn {
         top: 100px;
         transform:translatex(50%);
 
-        height: 60vh;
+        padding: 20px 0;
+        height: 80vh;
         width: 100vw;
         
         text-align: center;
 
+    }
+
+    header nav > div ul.on {
+        display: flex;
+        background-color: rgb(236, 236, 236);
+        font-size: 1.2rem;
     }
     
     header nav > div > button.menu-toggle {
